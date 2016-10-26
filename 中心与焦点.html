@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title></title>
+</head>
+<style>
+body{
+	margin:0px;
+}
+svg{
+				position: absolute;
+				left: calc((100% - 375px)/2);
+}
+</style>
+<body>
+<svg width="375" height="667">
+				<defs>
+					<radialGradient id="Gradient" cx="0.5" cy="0.5" r="0.5" fx="0.25" fy="0.25">  
+						<stop offset="0%" stop-color="red"></stop>
+						<stop offset="100%" stop-color="blue"></stop>
+					</radialGradient>		
+				</defs>
+<rect x="10" y="10" rx="15" ry="15" width="100" height="100" stroke="black" fill="url(#Gradient)"></rect>
+</svg>
+</body>
+</html>

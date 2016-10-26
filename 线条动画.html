@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+				
+        <title></title>
+				<style>
+					#svg1{
+						background:yellow;
+					}	
+					#svg2{
+						background:green;
+					}	
+				</style>
+</head>
+<body>
+       <svg id="svg1" width="300" height="200">
+							 <defs>
+							 <style>
+							 	<![CDATA[
+									#rect1{
+										stroke-dasharray:10;										
+										-webkit-animation:move 3s infinite linear;
+									}
+									@-webkit-keyframes move{
+													0%{
+														stroke-dashoffset:0;
+													}
+													100%{
+														stroke-dashoffset:100;
+													}
+									}
+								]]>
+							 </style>
+							 </defs>
+					<rect id="rect1" width="100%" height="100%" fill="none" stroke="gray" stroke-width="5" ></rect>	 
+			 </svg>	 
+       <svg id="svg2" width="300" height="200">
+							 <defs>
+							 <style>
+							 	<![CDATA[
+									#rect1{
+										stroke-dasharray:10;										
+										-webkit-animation:move 3s infinite linear;
+									}
+									@-webkit-keyframes move{
+													0%{
+														stroke-dashoffset:0;
+													}
+													100%{
+														stroke-dashoffset:100;
+													}
+									}
+								]]>
+							 </style>
+							 </defs>
+					<rect id="rect1" width="100%" height="100%" fill="none" stroke="white" stroke-width="5" ></rect>	 
+			 </svg>	 
+
+</body>
+</html>

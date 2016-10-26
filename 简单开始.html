@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title></title>
+<style>
+body{
+	margin:0px;
+}
+</style>
+</head>
+<body>
+<svg width="100%" height="100%" style="position:absolute">
+	<defs>
+	<radialGradient id="Gradient2">
+		<stop class="stop4" offset="0%"></stop>
+		<stop class="stop5" offset="50%"></stop>
+		<stop class="stop6" offset="100%"></stop>		
+	</radialGradient>
+	<linearGradient id="Gradient1">
+		<stop class="stop1" offset="0%"></stop>
+		<stop class="stop2" offset="50%"></stop>
+		<stop class="stop3" offset="100%"></stop>		
+	</linearGradient>
+	<style>
+<![CDATA[
+#rotate{
+	stroke:green;
+	stroke-linecap:butt;
+	stroke-linejoin:miter;
+	stroke-width:5;
+	stroke-dasharray:10,10;
+	fill:none;
+}
+
+#yes:hover {
+	fill:blue;
+	transition:all 3s;
+}
+#rotate2:hover {
+	transform:rotateZ(360deg);
+	transform-origin:center center;
+	transition:all 3s;
+}
+.stop1{
+stop-color:red;
+}
+.stop2{
+stop-color:black;stop-opacity:0;
+}
+.stop3{
+stop-color:blue;
+}
+.stop4{
+stop-color:blue;
+}
+.stop5{
+stop-color:black;stop-opacity:0;
+}
+.stop6{
+stop-color:red;
+}
+]]>
+	</style>
+	</defs>
+	<rect id="yes" width="100%" height="200" fill="url(#Gradient1)"/>
+	<circle id="rotate1" cx="50%" cy="100" r="90" fill="url(#Gradient2)" fill-opacity="0.7" stroke="blue" stroke-width="20" stroke-opacity="0.6"/>
+	<a href="http://baidu.com"><text id="rotate2" x="50%" y="125" width="50" height="50" font-size="60" text-anchor="middle" fill="white">SVG</text></a>
+	<line x1="10%" x2="90%" y1="220" y2="220" stroke="black" stroke-linecap="butt" stroke-width="20"/>
+	<text x="50%" y="225" fill="white" font-size="20" text-anchor="middle">butt</text>
+	<line x1="10%" x2="90%" y1="260" y2="260" stroke="black" stroke-linecap="square" stroke-width="20"/>
+	<text x="50%" y="265" font-size="20" text-anchor="middle" fill="white">Square</text>
+	<line x1="10%" x2="90%" y1="300" y2="300" stroke="black" stroke-linecap="round" stroke-width="20"/>
+	<text x="50%" y="305" font-size="20" text-anchor="middle" fill="white">round</text>
+	<polyline points="20 360 180 400 360 360" />
+	<polyline points="20 380 180 420 360 380" stroke="black" stroke-width="9" stroke-linecap="round" fill="none" stroke-linejoin="round"></polyline>
+	<polyline points="20 390 180 430 360 390" stroke="black" stroke-width="9" stroke-linecap="butt" fill="none" stroke-linejoin="bevel"></polyline>
+	<path id="rotate" d="m 228.57143,315.21933 c 8.73841,6.58961 -4.57144,15.03029 -10.95237,14.52382 -17.29193,-1.37251 -22.99906,-22.47478 -18.09527,-36.42856 8.77173,-24.96003 39.64002,-32.0674 61.90475,-21.66672 32.67437,15.26342 41.36376,57.02341 25.23816,87.38094 -21.49289,40.4618 -74.4823,50.75486 -112.85712,28.80961 -48.2908,-27.61585 -60.19445,-91.9767 -32.38107,-138.33331 33.68574,-56.14406 109.49103,-69.66202 163.80951,-35.95251 64.01244,39.7255 79.14716,127.01774 39.52395,189.28569 C 299.01542,474.72911 200.20925,491.48231 130.0001,445.9337 50.223997,394.17847 31.85103,283.84017 83.333241,205.69563 141.0885,118.02927 262.97182,98.035557 349.04749,155.45733 c 95.56031,63.74904 117.17555,197.18683 53.80976,291.19044" stroke-linecap="round" stroke-width="5"></path>
+</svg>
+<script>
+	var rotate1 = document.getElementById("rotate1");
+	rotate1.onclick = function (){
+		alert("this is ok");
+	}
+</script>
+</body>
+</html>
