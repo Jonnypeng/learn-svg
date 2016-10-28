@@ -10,7 +10,6 @@
 						background:yellow;
 					}	
 					#svg2{
-						background:green;
 					}	
 				</style>
 </head>
@@ -40,22 +39,23 @@
 							 <defs>
 							 <style>
 							 	<![CDATA[
-									#rect1{
-										stroke-dasharray:10;										
-										-webkit-animation:move 3s infinite linear;
+									#rect2{
+										stroke-dasharray:1000;										
+										stroke:black;
+										-webkit-animation:move 3s linear;
 									}
 									@-webkit-keyframes move{
 													0%{
 														stroke-dashoffset:0;
 													}
 													100%{
-														stroke-dashoffset:100;
+														stroke-dashoffset:1300;
 													}
 									}
 								]]>
 							 </style>
 							 </defs>
-					<rect id="rect1" width="100%" height="100%" fill="none" stroke="white" stroke-width="5" ></rect>	 
+					<rect id="rect2" width="100%" height="100%" fill="none" stroke-width="5" fill="green" ></rect>	 
 			 </svg>	 
 
 </body>

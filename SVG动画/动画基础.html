@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title></title>
+</head>
+<body>
+       <svg>
+			 	<rect x="10" y="10" width="0" height="3" stroke="black" fill="none" style="transform:scale(1);transform-origin:center center">
+				<animate
+					attributeName="width"
+					attributeType="XML"
+					from="0" to="100"
+					begin="0s" dur="3s"
+					fill="freeze"
+				></animate>
+				<animate
+					attributeName="height"
+					attributeType="XML"
+					from="3" to="100"
+					begin="3s" dur="3s"
+					fill="freeze"
+				></animate>
+				<animate
+					attributeName="width"
+					attributeType="XML"
+					from="100" to="3"
+					begin="6s" dur="3s"
+					fill="freeze"
+				></animate>
+				<animate
+					attributeName="height"
+					attributeType="XML"
+					from="100" to="3"
+					begin="9s" dur="3s"
+					fill="freeze"
+				></animate>
+				<animate
+					attributeName="height"
+					attributeType="XML"
+					from="3" to="100"
+					begin="12s" dur="3s"
+					fill="freeze"
+				></animate>
+				<animate
+					attributeName="width"
+					attributeType="XML"
+					from="3" to="100"
+					begin="12s" dur="3s"
+					fill="freeze"
+				></animate>
+				</rect>
+				<circle cx="60" cy="60" r="0" stroke="black" fill="white" style="transform:scale(1);transform-origin:center center">
+					<animate
+						attributeName="r"
+						attributeType="XML"
+						from="0" to="50"
+						begin="15s" dur="3s"
+						fill="freeze"
+					></animate>
+					<animate
+						attributeName="fill"
+						attributeType="XML"
+						from="white" to="red"
+						begin="18s" dur="3s"
+						fill="freeze"
+					></animate>
+					<animate
+						attributeName="fill"
+						attributeType="XML"
+						from="red" to="white"
+						begin="21s" dur="3s"
+						fill="freeze"
+					></animate>
+				</circle>
+			 </svg>	 
+</body>
+</html>
