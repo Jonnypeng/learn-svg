@@ -5,11 +5,20 @@
 	<title></title>
 </head>
 <body>
-<svg>
-	<polygon style="fill:#fcc;stroke:black">
-		<animate attributeName="points" attributeType="XML" to="10 10 100 10" begin="0s" dur="3s" fill="freeze"></animate>
-		<animate attributeName="points" attributeType="XML" to="10 10 100 10" begin="0s" dur="3s" fill="freeze"></animate>
-	</polygon>
-</svg>		
+<svg width="600" height="600">
+	<g>
+		<path id="c1" d="m36.5,228l75.5,-84c0.5,0 65.5,22 81.5,74c16,52 91,-50 90.5,-50c0.5,0 -91.5,-99 -92,-99c0.5,0 -132.5,50 -133.5,50c-1,0 -19,49 -19,47c0,-2 10,-93 9.5,-93c0.5,0 125.5,-21 126.5,-21c1,0 57,-18 59,-18c2,0 51,18 52,20c1,2 53,55 53,63c0,8 -6,71 -12,77c-6,6 -67,67 -68,67c-1,0 -32,5 -36,5c-4,0 -19,-2 -22,-3c-3,-1 -29,-12 -30,-12c-1,0 -50,6 -51,7c-1,1 -84,-30 -84,-30z" fill="none"></path>
+		<rect x="0" y="0" width="30" height="30" style="fill:#ccc;">
+		<!--<animateMotion from="0,0" to="60,30" begin="3s" dur="4s" fill="freeze"></animateMotion>-->
+		<!--<animateMotion path="M0,0 L150,150 L150,0 L0,150 L0,0" dur="5s" rotate="auto" fill="freeze" repeatDur="indefinite"></animateMotion>-->
+		<!--<animateMotion dur="5s" rotate="auto" fill="freeze" repeatDur="indefinite">
+			<mpath xlink:href="#c1"></mpath>
+		</animateMotion>-->
+		<animateMotion dur="4s" rotate="auto" fill="freeze" keyTimes="0;0.2;0.5;1" keyPoints="0;0.1;0.2;1" repeatDur="indefinite">
+			<mpath xlink:href="#c1"></mpath>
+		</animateMotion>
+		</rect>
+	</g>
+</svg>
 </body>
 </html>
