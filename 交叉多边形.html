@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <polygon stroke-width="5" stroke="#000000" points="149,89 117,169 197,121 101,121 181,169 " fill="#FF0000" id="svg_1"/>
+  <g id="btn_1">
+   <rect stroke="#000000" id="btn1" height="33" width="93.999999" y="200.75" x="49.223681" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#FF0000"/>
+   <text stroke="#000000" transform="matrix(0.411550937602307,0,0,0.446428582072258,-63.88973430645647,133.60490851756185) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_16" y="195.877501" x="389.052644" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff">fill-rule=&quot;nonzero&quot;</text>
+  </g>
+  <g id="btn_2">
+   <rect id="svg_19" stroke="#000000" height="33" width="93.999999" y="200.75" x="159.223681" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#FF0000"/>
+   <text id="svg_20" stroke="#000000" transform="matrix(0.411550937602307,0,0,0.446428582072258,-63.88973430645647,133.60490851756185) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="195.8775" x="656.334261" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#ffffff">fill-rule=&quot;evenodd&quot;</text>
+  </g>
+ </g>
+</svg>
+<script src="//cdn.bootcss.com/snap.svg/0.4.1/snap.svg-min.js"></script>
+	<script>
+		var btn1 = Snap("#btn_1");
+		var btn2 = Snap("#btn_2");
+		var svg1 = Snap("#svg_1");
+		btn1.click(function (){
+			svg1.animate({
+				"transform":new Snap.Matrix().scale(1,1,150,150)
+				},1000,mina.bounce).attr({
+		"fill-rule":"nonzero"
+		});
+		});
+		btn2.click(function (){
+			svg1.animate({
+				transform:new Snap.Matrix().scale(1.9,1.9,150,150)
+			},1000,mina.bounce).attr({
+			"fill-rule":"evenodd"
+		});
+		});
+	</script>
+	
+</body>
+</html>
