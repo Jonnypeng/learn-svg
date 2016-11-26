@@ -1,25 +1,30 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-				<defs>
-				<linearGradient id="Gradient1">
-				<stop stop-color="white" offset="5%"/>
-				<stop stop-color="blue" offset="95%"/>
-				</linearGradient>
-				<linearGradient y2="1" y1="0" x2="0" x1="0" id="Gradient2">
-				<stop stop-color="red" offset="5%"/>
-				<stop stop-color="orange" offset="95%"/>
-				</linearGradient>
-				<pattern patternContentUnits="objectBoundingBox" height="0.25" width="0.25" id="Pattern">
-				<rect id="svg_1" fill="skyblue" height="0.25" width="0.25" y="0" x="0"/>
-				<rect id="svg_2" fill="url(#Gradient2)" height="0.125" width="0.125" y="0" x="0"/>
-				<circle id="svg_3" fill-opacity="0.5" fill="url(#Gradient1)" r="0.1" cy="0.125" cx="0.125"/>
-				</pattern>
-				</defs>
-				<g>
-				<title>background</title>
-				<rect fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
-				</g>
-				<g>
-				<title>Layer 1</title>
-				<rect id="svg_4" height="200" width="200" y="0" x="0" stroke="black" fill="url(#Pattern)"/>
-				</g>
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title></title>
+</head>
+<body>
+				<svg id="svg" width="400" height="400">
+					<defs>
+					<pattern id="p1" x="0" y="0" width="20%" height="20%" patternUnits="objectBoundingBox">
+					<rect id="r1" height="50" width="50" y="0" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="gray"/>
+					   <path stroke="none" id="svg_3" d="m32.03592,6.99999c-5.10739,0.95576 -6.8037,5.30285 -6.86989,7.78847c2.80768,0.20648 4.5671,-1.40628 5.28287,-2.34953c1.17141,-1.33901 1.45464,-3.22394 1.58702,-5.43894zm0.62804,8.58624c-3.69278,0 -5.75544,1.53298 -6.76984,1.55019c-1.16833,-0.0923 -4.56711,-1.48136 -6.54972,-1.50326c-6.94224,0.20961 -8.92794,7.87606 -8.84174,11.17197c0.56492,12.61578 8.14136,15.87414 9.37895,16.17917c0.99439,0.19866 4.34237,-1.55644 6.80371,-1.4751c2.68915,0.2847 4.57018,1.41566 5.64769,1.33745c1.36843,-0.09699 5.82317,-3.75424 7.16698,-9.39653c-2.70609,-2.32606 -4.37777,-4.43625 -4.52708,-6.43538c-0.07081,-0.90571 1.26992,-6.02242 3.40493,-7.45997c0.30786,-1.76762 -2.8631,-4.01077 -5.35061,-3.96072c-0.12314,-0.00469 -0.24321,-0.00782 -0.36327,-0.00782z" fill="#ffffff"/>
+					</pattern>
+					</defs>
+					<rect x="0" y="0" width="250" height="250" stroke="black" stroke-width="1" fill="url(#p1)"></rect>
+				</svg>	 
+				<script src="//cdn.bootcss.com/snap.svg/0.4.1/snap.svg-min.js"></script>
+				<script>
+					var r1 = Snap("#r1");
+					setInterval(fn,1000);
+					function fn(){
+						var color = "rgba(" + Math.round(Math.random()*255) + "," + Math.round(Math.random()*255) + "," + Math.round(Math.random()*255) + ")";
+						r1.attr({
+						"fill":color
+						})
+					}
+				</script>
+</body>
+</html>		
